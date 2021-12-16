@@ -1,0 +1,26 @@
+.containerLogin{
+    margin: auto;
+    .form{
+        min-width: 350px;
+        width: 20%;
+        height: auto;
+        margin: 25vh auto;
+        h1{
+            margin-bottom: 3vh;
+            color: #1b54d1;
+        }
+        label{
+            color: #797979;
+        }
+        input{
+            &:focus{
+                box-shadow: 0 0 10px #1b55d180;
+            }
+        }
+        .btn-login {
+            width: 100%;
+            color: #fff;
+            background-color: #1b54d1;
+        }
+    }
+}

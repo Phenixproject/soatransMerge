@@ -1,0 +1,115 @@
+.containerHome{
+    .row{
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        .logo{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 180px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+        .date{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            padding: 0 5vw;
+            .dateInput{
+                width: 100%;
+                padding: 10px 30px;
+                border: 0;
+                border-bottom: 2px solid rgb(109, 109, 109);
+                color: rgb(109, 109, 109);
+                font-size: 25px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+        .heure-reservation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2{
+                margin-top: 15px;
+            }
+            .heure{
+                display: flex;
+                flex-direction: column;
+                row-gap: 2vh;
+                .btn-heure{
+                    width: 12vw;
+                    min-width: 150px;
+                    border-radius: 20px;
+                    outline: 0;
+                    border: 0;
+                    display: grid;
+                    grid-template-columns: 1.5fr 3.5fr;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    p{
+                        height: 100%;
+                        margin: 0;
+                        padding: 10px 0;
+                        &:first-child{
+                            background-color: rgb(19, 115, 170);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .title{
+            margin: 1rem 0;
+        }
+        .ajoutVoiture{
+            overflow: hidden;
+            border: 1px solid rgb(177, 176, 176);
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+            .btn-voiture{
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                border: 0;
+                outline: none;
+                border-left: 1px solid #000;
+                cursor: pointer;
+                &:first-child{
+                    border-left: 0  ;
+                }
+            }
+        }
+        .choixVoyage{
+            padding: 3rem 10vw;
+            display: flex;
+            flex-direction: column;
+        }
+        .place{
+            .ligne{
+                margin-bottom: 3vh;
+            }
+            .btn-place{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 20px;
+                border: 0;
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #fff;
+                background-color: rgb(65, 156, 216);
+            }
+        }
+    }
+}
+
+.btn{
+    border-radius: .5rem;
+    background-color: rgb(19, 115, 170);
+}
